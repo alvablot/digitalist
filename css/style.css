@@ -67,7 +67,7 @@ main {
   background-color: white;
   z-index: 1;
   position: relative;
-  height:90vh;
+  height:100%;
 }
 .text {
   margin-top: -60px;
@@ -110,11 +110,13 @@ main {
   position: relative;
   text-align: center;
   padding-right: 0px;
+  padding-top: 9px;
 }
 #menu {
   position: relative;
   display: flex;
   justify-content: right;
+  padding-right: 0px;
 }
 #menu-layer1 {
   display: none;
