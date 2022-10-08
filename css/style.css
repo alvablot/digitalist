@@ -2,20 +2,24 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Roboto Mono", monospace;
   color: var(--light-text);
 }
 :root {
   --pad: 5%;
   --link-width: 135px;
   --link-height: 135px;
-  --header-pad: 30px;
+  --header-pad: 5px 15px 0px 15px;
   --content-pad: 20px 20px 30px 30px;
-  --menu-pad: 20px 20px 30px 30px;
+  --text-pad: 20px 38px 20px 38px;
+  --menu-pad: 30px 20px 30px 30px;
   --light-text: white;
   --max-width: 1024px;
   --bright-border: #6c4e44;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;;
+  letter-spacing: 0.5px;
+  line-height: 1.3rem;
 }
 body {
   margin: 0px;
@@ -25,82 +29,87 @@ a {
   color: white;
 }
 header {
+  max-width: var(--max-width);
+  padding:  var(--header-pad);
+  margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: left;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.8);
   color: white;
+  z-index: 10;
 }
 button {
   background-color: #3ebea3;
+  justify-content: center;
+  align-content: center;
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 12px;
   border: 0px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 2px;
+  z-index: 200;
+  width: 105px;
+  height: 30px;
+}
+button:hover {
+  background-color: #1d584b;
+  cursor: grab;
 }
 .head-content {
   padding: var(--header-pad);
 }
 main {
-  padding: var(--content-pad);
   max-width: var(--max-width);
   padding: 0px;
   margin: 0 auto;
   margin-top: 0px;
   background-color: white;
-  z-index: -2;
+  z-index: 1;
   position: relative;
-  height: 100%;
+  height:90vh;
 }
-/*
-content {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  margin-top: 0px;
-  height: 50vh;
-  display: block;
-  position: relative;
-  top: 0px;
-  color: black;
-}
-*/
 .text {
-  margin-top: -50px;
-  width:100%;
-  padding: var(--content-pad);
-  display:flex;
+  margin-top: -60px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: var(--text-pad);
+  display: flex;
   justify-content: center;
 }
 .middle {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 4% 0px 4%;
 }
 .loggor {
-  max-width: 200px;
-  width: 33%;
+  width: 50%;
   justify-content: center;
   text-align: center;
   color: black;
 }
+.button {
+  margin-bottom: 0px;
+}
 .code-img {
   margin-bottom: 20px;
+  width: 50%;
 }
 #main-img {
   position: relative;
-  top: -80px;
+  top: -110px;
   width: 100%;
   max-width: var(--max-width);
   margin: 0px;
   z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px;
 }
 #logga {
   position: relative;
-  width: 70%;
+  width: 100%;
 }
 #search {
   position: relative;
-  width: 30%;
   text-align: center;
+  padding-right: 0px;
 }
 #menu {
   position: relative;
@@ -110,7 +119,6 @@ content {
 #menu-layer1 {
   display: none;
   z-index: 2;
-  opacity: 1;
   padding: var(--menu-pad);
   justify-content: right;
   position: fixed;
