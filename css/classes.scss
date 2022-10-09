@@ -1,0 +1,99 @@
+@import "variables" ;
+
+.head-content {
+  padding: $headerPad;
+}
+.text {
+  margin-top: -105px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 430px;
+  padding: $textPad;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  margin-top: -60px;
+  width: 100%;
+  padding: $textPad;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+.loggor {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: $darkText;
+}
+.button {
+  margin-bottom: 0px;
+}
+.code-img {
+  margin-bottom: 20px;
+  width: 45%;
+}
+.code-text {
+  width: 100%;
+  height: 80px;
+  padding: 0px 10px 10px 10px;
+  justify-content: center;
+  text-align: center;
+  color: $darkText;
+}
+.meny-icons {
+  width: 80%;
+}
+.menu-item {
+  padding: $menuPad;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: $font1;
+}
+.menu-item2 {
+  font-size: 20px;
+  margin-top: 0px;
+  position: relative;
+  left: 20px;
+  padding: $menuPad;
+  display: none;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .text {
+    margin-top: -130px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+  }
+  .loggor {
+    justify-content: center;
+    text-align: center;
+    color: $darkText;
+  }
+  .code-img {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  .code-text {
+    width: 100%;
+    height: 80px;
+    padding: 0px 20px 10px 20px;
+    justify-content: center;
+    text-align: center;
+    color: $darkText;
+  }
+  .buttons {
+    margin-top: -70px;
+    margin-bottom: 60px;
+    width: 100%;
+    padding: $textPad;
+    display: block;
+    justify-content: center;
+    height: 200px;
+  }
+}

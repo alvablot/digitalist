@@ -1,0 +1,117 @@
+@import "variables";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    font-family: $font1;
+    font-family: $font2;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.3rem;
+    overflow-x: hidden;
+}
+body {
+    margin: 0px;
+    background-color: $bodyBg;
+}
+a {
+    color: $greyText;
+    text-decoration: none;
+}
+a:hover {
+    color: $lightText;
+}
+h2 {
+    font-weight: 300;
+}
+div {
+    .menu-item,
+    .menu-item2 {
+        color: $greyText;
+    }
+    .menu-item:hover {
+        transition: all 300ms ease-in;
+        color: $lightText;
+    }
+}
+header {
+    max-width: $maxWidth;
+    padding: $headerPad;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    background-color: $headerBg;
+    color: $lightText;
+    z-index: 10;
+}
+main {
+    max-width: $maxWidth;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 0px;
+    background-color: $lightBg;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+button {
+    background-color: $buttonColor;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: $buttonShadow;
+    z-index: 200;
+    width: 105px;
+    height: 30px;
+    color: $lightText;
+}
+button:hover {
+    background-color: $buttonHoverColor;
+    cursor: grab;
+}
+input {
+    background: $inputBg;
+    border-radius: 8px;
+    border: $inputBorder;
+    padding: 8px;
+    z-index: 200;
+    width: 100%;
+    height: 30px;
+    color: $greyText;
+}
+input:focus {
+    outline: none;
+    color: $lightText;
+}
+@media screen and (max-width: 550px) {
+    header {
+      width: 100%;
+      padding: 0px;
+      padding-top: 6px;
+      height: 70px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: left;
+      background-color: $headerBgMob;
+      color: $lightText;
+      z-index: 10;
+  }
+  main {
+      max-width: $maxWidth;
+      padding: 0px;
+      margin: 0 auto;
+      margin: 0px;
+      background-color: $lightBg;
+      z-index: 1;
+      position: relative;
+      height: 100%;
+  } 
+}

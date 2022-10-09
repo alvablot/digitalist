@@ -6,66 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontendtest</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
+    <link rel="stylesheet" href="./css/classes.css" />
+    <link rel="stylesheet" href="./css/ids.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;500&display=swap');
     </style>
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/search.js"></script>
 </head>
 
 <body>
     <header>
-        <div id="logga" class="head-content"><img src="./img/digitalist-logo.png" width="233" height="80"></div>
-        <div id="search" class="head-content"><a href="#"><img src="./img/search.png" width="35" height="80"></a></div>
-        <div id="menu" class="head-content"><a href="#"><img src="./img/menu.png" width="40" height="80"></a></div>
-
+        <div id="logga" class="head-content"><a href="index.html"><img src="./img/digitalist-logo.png" width="233"
+                    height="80" class="menu-icons" id="img-loggo"></a></div>
+        <div id="input" class="head-content">
+            <input type="hidden" value="Search" id="search-input">
+        </div>
+        <div id="search" class="head-content">
+            <a href="#" id="search-icon"><img src="./img/search.png" width="35" height="80" id="img-search"></a>
+        </div>
+        <div id="menu" class="head-content">
+            <a href="#" id="menu-button"><img src="./img/menu.png" width="40" height="80" id="img-search"></a>
+        </div>
     </header>
     <main>
-  
-        <img id="main-img" src="../img/bussiness-team.jpg"><br>
-
-        <div class="text">
-            <div class="loggor">
-                <img src="./img/html.png" class="code-img"><br>
-                HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the
-                fifth and current major version of the HTML standard.<br>
-            </div>
-            <div class="loggor middle"><img src="./img/css.png" class="code-img"><br>
-                Cascading Style Sheets is a style sheet language used for describing the presentation of a document
-                written in markup language.<br>
-            </div>
-            <div class="loggor"><img src="./img/js.png" class="code-img"><br>
-                JavaScript, often abbreviated as JA, is a high-level, dynamic, weakly typed, prototype-based,
-                multi-paradigm. and interpreted programming language.<br>
+        <div><img id="main-img" src="../img/bussiness-team.jpg"></div><br>
+        <div id="alert-container">
+            <div id="alert-box">
+                <h2>Experts in co-creation</h2>
+                <p id="alert-text">
+                    Carabitur suscipit suscipit tellus.<br>
+                    Vivamus in erat ut urna cursus vestibulum.<br>
+                    Nulla consequat massa quis enim.</p>
+                <div><button>Read more</button></div>
             </div>
         </div>
         <div class="text">
             <div class="loggor">
-                <button>Read more</button>
+                <img src="./img/html.png" class="code-img">
+                <div class="code-text">
+                    HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is
+                    the
+                    fifth and current major version of the HTML standard.
+                </div>
+                <div class="loggor">
+                    <button>Read more</button>
+                </div>
             </div>
-            <div class="loggor middle"><button>Read more</button>
+            <div class="loggor"><img src="./img/css.png" class="code-img">
+                <div class="code-text">
+                    Cascading Style Sheets is a style sheet language used for describing the presentation of a document
+                    written in markup language.
+                </div>
+                <div class="loggor middle"><button>Read more</button>
+                </div>
             </div>
-            <div class="loggor"><button>Read more</button>
+            <div class="loggor"><img src="./img/js.png" class="code-img">
+                <div class="code-text">
+                    JavaScript, often abbreviated as JA, is a high-level, dynamic, weakly typed, prototype-based,
+                    multi-paradigm. and interpreted programming language.
+                </div>
+                <div class="loggor"><button>Read more</button>
+                </div>
             </div>
         </div>
 
     </main>
-    <div id="alert-box"></div>
-
-    <div id="menu-layer1">
-        <div class="menu-item"><a href="#">x</a>
-        </div>
-        <div class="menu-item"><a href="#">Menu layer1</a>
-            <div class="menu-item2"><a href="#">Menu layer2</a></div>
-        </div>
-        <div class="menu-item"><a href="#">Menu layer1</a>
-            <div class="menu-item2"><a href="#">Menu layer2</a></div>
-        </div>
-        <div class="menu-item"><a href="#">Menu layer1</a>
-            <div class="menu-item2"><a href="#">Menu layer2</a></div>
-        </div>
-        <div class="menu-item"><a href="#">Menu layer1</a>
-            <div class="menu-item2"><a href="#">Menu layer2</a></div>
+    <div id="menu-container">
+        <div id="menu-layer1">
+            <div id="x"><a href="#"><img src="./img/x.png"></a>
+            </div>
+            <div class="menu-item top-border" id="menu-item1">Kundcase
+                <div class="menu-item2" id="menu-item1-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
+            <div class="menu-item" id="menu-item2">Tjänster
+                <div class="menu-item2" id="menu-item2-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
+            <div class="menu-item" id="menu-item3">Blogg
+                <div class="menu-item2" id="menu-item3-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
+            <div class="menu-item" id="menu-item4">Om oss
+                <div class="menu-item2" id="menu-item4-2">
+                    <a href="#">Ad culpa id nisi...</a><br>
+                    <a href="#">Ad culpa id nisi...</a>
+                </div>
+            </div>
+            <div class="menu-item" id="menu-item5">Event
+                <div class="menu-item2" id="menu-item5-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
+            <div class="menu-item" id="menu-item6">Karriär
+                <div class="menu-item2" id="menu-item6-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
+            <div class="menu-item" id="menu-item7">Kontakt
+                <div class="menu-item2" id="menu-item7-2"><a href="#">Ad culpa id nisi...</a></div>
+            </div>
         </div>
     </div>
     <div id="trans-layer"></div>

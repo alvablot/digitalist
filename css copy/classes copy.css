@@ -1,0 +1,72 @@
+.head-content {
+  padding: 5px 15px 0px 15px;
+}
+
+.text {
+  margin-top: -105px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 20px 38px 20px 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin-top: -60px;
+  width: 100%;
+  padding: 20px 38px 20px 38px;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.middle {
+  margin: 0px 4% 0px 4%;
+}
+
+.loggor {
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.button {
+  margin-bottom: 0px;
+}
+
+.code-img {
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.meny-icons {
+  width: 80%;
+}
+
+.menu-item {
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
+}
+
+.menu-item2 {
+  position: relative;
+  left: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+.menu-item {
+  border-bottom: 1px solid grey;
+}
+
+.menu-item {
+  border-bottom: 1px solid grey;
+}
+
+.top-border {
+  border-bottom: 1px solid grey;
+}
+
+.menu-item2 {
+  display: block;
+}/*# sourceMappingURL=classes.css.map */
