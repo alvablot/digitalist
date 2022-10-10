@@ -2,7 +2,7 @@
   position: relative;
   top: -110px;
   width: 100%;
-  max-width: 1050px;
+  max-width: 1045px;
   margin: 0px;
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px;
@@ -115,8 +115,6 @@
   z-index: 40;
   position: absolute;
   top: 450px;
-  cursor: -webkit-grab;
-  cursor: grab;
   display: block;
 }
 
@@ -156,7 +154,7 @@
     position: relative;
     top: -110px;
     width: 100%;
-    max-width: 1050px;
+    max-width: 1045px;
     margin: 0px;
     z-index: -1;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px;

@@ -3,7 +3,6 @@ const $menyLayer1 = document.getElementById("menu-layer1");
 const $x = document.getElementById("x");
 const $transLayer = document.getElementById("trans-layer");
 const $menuContainer = document.getElementById("menu-container");
-const $arrow = document.getElementById("arrow");
 const speed = 20;
 let step = speed;
 let count = -1000;
@@ -70,9 +69,3 @@ function playAnimation() {
     }
     window.requestAnimationFrame(playAnimation);
 }
-$arrow.addEventListener("click", () => {
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: "smooth",
-    });
-});

@@ -53,6 +53,11 @@
     font-size: 30px;
     font-weight: 500;
     font-family: $font1;
+    border-bottom: 1px solid #333333;
+}
+.menu-item:hover {
+    color: $linkHover;
+    transition: all 0.5s ease;
 }
 .menu-item2 {
     font-size: 20px;
@@ -62,6 +67,10 @@
     padding: $menuPad;
     display: none;
     line-height: 30px;
+}
+.menu-item2:hover {
+    color: $linkHover;
+    transition: all 0.5s ease;
 }
 @media screen and (max-width: 775px) {
     .loggor {
