@@ -8,13 +8,12 @@
     margin: 0px;
     z-index: -1;
     box-shadow: $imgShadow;
-    
 }
 #img-container {
-    background-color: black;
+    background-color: $bodyBg;
     position: relative;
-    top: - 100px;
-    width:100%;
+    top: -100px;
+    width: 100%;
     height: 650px;
     background-image: url("../img/bussiness-team.jpg");
     opacity: $imgObacity;
@@ -106,7 +105,12 @@
     justify-content: center;
     align-items: center;
 }
-
+#arrow {
+    z-index: 40;
+    position: absolute;
+    top: 450px;
+    cursor: grab;
+}
 #alert-box {
     min-width: 360px;
     min-height: 200px;
@@ -145,7 +149,7 @@
     #img-container {
         position: relative;
         top: -100px;
-        width:100%;
+        width: 100%;
         height: 600px;
         background-image: url("../img/bussiness-team.jpg");
         opacity: $imgObacityMob;

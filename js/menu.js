@@ -3,6 +3,7 @@ const $menyLayer1 = document.getElementById("menu-layer1");
 const $x = document.getElementById("x");
 const $transLayer = document.getElementById("trans-layer");
 const $menuContainer = document.getElementById("menu-container");
+const $arrow = document.getElementById("arrow");
 const speed = 20;
 let step = speed;
 let count = -1000;
@@ -30,6 +31,8 @@ $menuItems2.map((items) => {
 
 $menyButton.addEventListener("click", () => {
     step = speed;
+    document.querySelector("html").style.overflowX = "auto";
+    document.querySelector("body").style.overflowX = "auto";
     $menuContainer.style.zIndex = 20;
     $menyLayer1.style.display = "block";
     $transLayer.style.display = "block";
@@ -40,7 +43,9 @@ $x.addEventListener("click", () => {
     $menyLayer1.style.display = "block";
     $transLayer.style.display = "none";
     $menuContainer.style.right = "-1500px";
-    $menuContainer.style.zIndex = 1;
+    $menuContainer.style.zIndex = 200;
+    document.querySelector("html").style.overflowX = "hidden";
+    document.querySelector("body").style.overflowX = "hidden";
 });
 
 $menuItems.forEach((items, i) => {
@@ -65,3 +70,9 @@ function playAnimation() {
     }
     window.requestAnimationFrame(playAnimation);
 }
+$arrow.addEventListener("click", () => {
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth",
+    });
+});
