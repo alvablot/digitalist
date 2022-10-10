@@ -4,7 +4,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 :root {
     font-family: $font1;
@@ -55,6 +54,7 @@ main {
     margin: 0 auto;
     margin-top: 0px;
     background-color: $lightBg;
+    height: 100%;
     z-index: 1;
     position: relative;
     height: 100%;
