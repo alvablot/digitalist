@@ -9,7 +9,14 @@
     z-index: -1;
     box-shadow: $imgShadow;
 }
-
+#img-container {
+    position: relative;
+    top: - 100px;
+    width:100%;
+    height: 650px;
+    background-image: url("../img/bussiness-team.jpg");
+    box-shadow: $imgShadow;
+}
 #logga {
     position: relative;
     width: 100%;
@@ -107,8 +114,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0px 33% 0px 33%;
-    padding: 0px 20px 0px 20px;
+    margin: 10% 50% 0px 50%;
+    padding: 0px 30px 0px 20px;
 }
 #alert-text {
     margin: 0px 50px 0px 50px;
@@ -125,23 +132,30 @@
 @media screen and (max-width: 550px) {
     #main-img {
         position: relative;
-        top: -96px;
-        width: 600%;
-        height: 602px;
+        top: -110px;
+        width: 100%;
+        max-width: $maxWidth;
         margin: 0px;
         z-index: -1;
         box-shadow: $imgShadow;
-        padding: 0px;
-        overflow: hidden;
-        object-fit: 100%;
+    }
+    #img-container {
+        position: relative;
+        top: -100px;
+        width:100%;
+        height: 600px;
+        background-image: url("../img/bussiness-team.jpg");
+        box-shadow: $imgShadow;
     }
     #alert-container {
         display: flex;
+        width: 210px;
         width: 100%;
         z-index: 10;
         justify-content: center;
         align-items: center;
         margin: 0px;
+        bottom: 1px;
     }
     #alert-text {
         width: 210px;
@@ -152,8 +166,10 @@
     }
     #alert-box {
         position: absolute;
-        top: 306px;
+        bottom: 0px;
+        top: 267px;
         width: 100%;
+        height: 200px;
         display: block;
         background-color: $headerBgMob;
         color: $lightText;
@@ -164,8 +180,9 @@
         padding: 0px 15px 0px 15px;
     }
     #img-loggo {
+        padding-top: 0px;
         width: 140px;
-        height: 50px;
+        height: 55px;
         margin: 0px;
     }
     #logga {

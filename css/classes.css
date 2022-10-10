@@ -13,7 +13,7 @@
 }
 
 .buttons {
-  margin-top: -60px;
+  top: -50px;
   width: 100%;
   padding: 20px 35px 20px 35px;
   display: flex;
@@ -26,6 +26,7 @@
   justify-content: center;
   text-align: center;
   color: #000000;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .code-img {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   width: 45%;
 }
 
@@ -92,11 +93,10 @@
     justify-content: center;
   }
   .loggor {
+    align-content: center;
     justify-content: center;
-    text-align: center;
     color: #000000;
     margin: 0px;
-    padding: 0px 20px 0px 30px;
   }
   .code-img {
     margin-top: 35px;
@@ -120,6 +120,7 @@
     width: 100%;
     padding-bottom: 0px;
     display: block;
+    align-content: center;
     justify-content: center;
     height: 100px;
   }
@@ -133,7 +134,7 @@
     margin-top: 0px;
     position: relative;
     left: 20px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 40px 10px 40px;
     display: none;
     line-height: 30px;
   }
