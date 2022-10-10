@@ -12,6 +12,9 @@
     letter-spacing: 0.5px;
     line-height: 1.3rem;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: $bodyBg;
     overflow-x: hidden;
