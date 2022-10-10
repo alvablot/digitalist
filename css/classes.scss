@@ -120,7 +120,7 @@
     height: 100px;
   }
   .menu-item {
-    padding: $menuPad;
+    padding: 8px;;
     font-weight: 500;
     font-family: $font1;
   }
@@ -128,8 +128,8 @@
     font-size: 12px;
     margin-top: 0px;
     position: relative;
-    left: 20px;
-    padding: $menuPadMob;
+    left: 10px;
+    padding: 10px;
     display: none;
     line-height: 30px;
   }
