@@ -132,12 +132,15 @@
   #main-img {
     position: relative;
     top: -96px;
-    width: 600px;
+    width: 600%;
     height: 602px;
     margin: 0px;
     z-index: -1;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px;
     padding: 0px;
+    overflow: hidden;
+    -o-object-fit: 100%;
+       object-fit: 100%;
   }
   #alert-container {
     display: flex;
@@ -194,10 +197,26 @@
     padding-right: 0px;
     padding-top: 7px;
   }
+  #menu-layer1 {
+    width: 60%;
+  }
   #menu {
     position: relative;
     display: flex;
     justify-content: right;
-    padding-right: 7px;
+    padding-right: 12px;
+  }
+  #menu-item1,
+#menu-item2,
+#menu-item3,
+#menu-item4,
+#menu-item5,
+#menu-item6,
+#menu-item7 {
+    padding: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: -webkit-grab;
+    cursor: grab;
   }
 }/*# sourceMappingURL=ids.css.map */

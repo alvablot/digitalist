@@ -3,9 +3,9 @@ const $menyLayer1 = document.getElementById("menu-layer1");
 const $x = document.getElementById("x");
 const $transLayer = document.getElementById("trans-layer");
 const $menuContainer = document.getElementById("menu-container");
-const speed = 10;
+const speed = 20;
 let step = speed;
-let count = -1500;
+let count = -1000;
 const $menuItems = [
     document.getElementById("menu-item1"),
     document.getElementById("menu-item2"),

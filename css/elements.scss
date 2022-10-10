@@ -92,26 +92,27 @@ input:focus {
 }
 @media screen and (max-width: 550px) {
     header {
-      width: 100%;
-      padding: 0px;
-      padding-top: 6px;
-      height: 70px;
-      margin: 0 auto;
-      position: relative;
-      display: flex;
-      justify-content: left;
-      background-color: $headerBgMob;
-      color: $lightText;
-      z-index: 10;
-  }
-  main {
-      max-width: $maxWidth;
-      padding: 0px;
-      margin: 0 auto;
-      margin: 0px;
-      background-color: $lightBg;
-      z-index: 1;
-      position: relative;
-      height: 100%;
-  } 
+        width: 100%;
+        padding: 0px;
+        padding-top: 6px;
+        height: 70px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: left;
+        background-color: $headerBgMob;
+        color: $lightText;
+        z-index: 10;
+    }
+    main {
+        max-width: $maxWidth;
+        padding: 0px;
+        margin: 0 auto;
+        margin: 0px;
+        background-color: $lightBg;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        border: 1px solid black;
+    }
 }
