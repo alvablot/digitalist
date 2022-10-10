@@ -110,6 +110,7 @@
     position: absolute;
     top: 450px;
     cursor: grab;
+    display: block;
 }
 #alert-box {
     min-width: 360px;
@@ -137,6 +138,9 @@
     margin-bottom: 20px;
 }
 @media screen and (max-width: 550px) {
+    #arrow {
+        display: none;
+    }
     #main-img {
         position: relative;
         top: -110px;
