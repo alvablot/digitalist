@@ -49,7 +49,7 @@ div .menu-item:hover {
 }
 
 header {
-  max-width: 1024px;
+  max-width: 1050px;
   padding: 5px 15px 0px 15px;
   margin: 0 auto;
   position: relative;
@@ -61,7 +61,7 @@ header {
 }
 
 main {
-  max-width: 1024px;
+  max-width: 1050px;
   padding: 0px;
   margin: 0 auto;
   margin-top: 0px;
@@ -133,7 +133,7 @@ input:focus {
     z-index: 10;
   }
   main {
-    max-width: 1024px;
+    max-width: 1050px;
     padding: 0px;
     margin: 0 auto;
     margin: 0px;
