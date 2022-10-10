@@ -3,13 +3,14 @@
 }
 
 .text {
-  margin-top: -105px;
+  margin-top: -115px;
   margin-bottom: 15px;
   width: 100%;
   height: 430px;
   padding: 20px 35px 20px 35px;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .buttons {

@@ -8,13 +8,16 @@
     margin: 0px;
     z-index: -1;
     box-shadow: $imgShadow;
+    
 }
 #img-container {
+    background-color: black;
     position: relative;
     top: - 100px;
     width:100%;
     height: 650px;
     background-image: url("../img/bussiness-team.jpg");
+    opacity: $imgObacity;
     box-shadow: $imgShadow;
 }
 #logga {
@@ -145,6 +148,7 @@
         width:100%;
         height: 600px;
         background-image: url("../img/bussiness-team.jpg");
+        opacity: $imgObacityMob;
         box-shadow: $imgShadow;
     }
     #alert-container {
