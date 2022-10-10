@@ -1,138 +1,135 @@
-@import "variables" ;
+@import "variables";
 
 .head-content {
-  padding: $headerPad;
+    padding: $headerPad;
 }
 .text {
-  margin-top: -115px;
-  margin-bottom: 15px;
-  width: 100%;
-  height: 430px;
-  padding: $textPad;
-  display: flex;
-  justify-content: center;
-  background-color: $lightBg;
-}
-.buttons {
-  top: -50px;
-  width: 100%;
-  padding: $textPad;
-  display: flex;
-  justify-content: center;
-  height: 150px;
-}
-.loggor {
-  width: 100%;
-  height: 400px;
-  justify-content: center;
-  text-align: center;
-  color: $darkText;
-  margin-top: 10px; 
-  margin-bottom: 10px; 
-
-}
-.button {
-  margin-bottom: 0px;
-}
-.code-img {
-  margin-bottom: 0px;
-  width: 45%;
-}
-.code-text {
-  width: 100%;
-  height: 100px;
-  padding: 10px 15px 5px 13px;
-  margin-top: 0px;
-  justify-content: center;
-  text-align: center;
-  color: $darkText;
-
-}
-.meny-icons {
-  width: 80%;
-}
-.menu-item {
-  padding: $menuPad;
-  font-size: 30px;
-  font-weight: 500;
-  font-family: $font1;
-}
-.menu-item2 {
-  font-size: 20px;
-  margin-top: 0px;
-  position: relative;
-  left: 20px;
-  padding: $menuPad;
-  display: none;
-  line-height: 30px;
-}
-@media screen and (max-width: 775px) {
-  .loggor {
-    justify-content: center;
-    text-align: center;
-    color: $darkText;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding: $headerPadMob;
-  }
-  .code-text {
-    height: 120px;
-  }
-} 
-@media screen and (max-width: 550px) {
-  .text {
-    margin-top: -130px;
+    margin-top: -115px;
     margin-bottom: 15px;
     width: 100%;
-    height: 1250px;
-    display: block;
+    height: 430px;
+    padding: $textPad;
+    display: flex;
     justify-content: center;
-  }
-  .loggor {
-    align-content: center;
-    justify-content: center;
-    color: $darkText;
-    margin: 0px;
-  }
-  .code-img {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    width: 40%;
-  }
-  .code-text {
-    position:relatibe;
-    top: -30px;
+    background-color: $lightBg;
+}
+.buttons {
+    top: -50px;
     width: 100%;
-    height: 20%;
-    padding: 10px 10px 0px 10px;
+    padding: $textPad;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+.loggor {
+    width: 100%;
+    height: 400px;
     justify-content: center;
     text-align: center;
     color: $darkText;
-  }
-  .buttons {
-    margin-top: 0px;
-    margin-bottom: 60px;
-    top: -20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button {
+    margin-bottom: 0px;
+}
+.code-img {
+    margin-bottom: 0px;
+    width: 45%;
+}
+.code-text {
     width: 100%;
-    padding-bottom: 0px;
-    display: block;
-    align-content: center;
-    justify-content: center;
     height: 100px;
-  }
-  .menu-item {
-    padding: 8px;;
+    padding: 10px 15px 5px 13px;
+    margin-top: 0px;
+    justify-content: center;
+    text-align: center;
+    color: $darkText;
+}
+.meny-icons {
+    width: 80%;
+}
+.menu-item {
+    padding: $menuPad;
+    font-size: 30px;
     font-weight: 500;
     font-family: $font1;
-  }
-  .menu-item2 {
-    font-size: 12px;
+}
+.menu-item2 {
+    font-size: 20px;
     margin-top: 0px;
     position: relative;
-    left: 10px;
-    padding: 10px;
+    left: 20px;
+    padding: $menuPad;
     display: none;
     line-height: 30px;
-  }
-
+}
+@media screen and (max-width: 775px) {
+    .loggor {
+        justify-content: center;
+        text-align: center;
+        color: $darkText;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: $headerPadMob;
+    }
+    .code-text {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .text {
+        margin-top: -130px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 1250px;
+        display: block;
+        justify-content: center;
+    }
+    .loggor {
+        align-content: center;
+        justify-content: center;
+        color: $darkText;
+        margin: 0px;
+    }
+    .code-img {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        width: 40%;
+    }
+    .code-text {
+        position: relatibe;
+        top: -30px;
+        width: 100%;
+        height: 20%;
+        padding: 10px 10px 0px 10px;
+        justify-content: center;
+        text-align: center;
+        color: $darkText;
+    }
+    .buttons {
+        margin-top: 0px;
+        margin-bottom: 60px;
+        top: -20px;
+        width: 100%;
+        padding-bottom: 0px;
+        display: block;
+        align-content: center;
+        justify-content: center;
+        height: 100px;
+    }
+    .menu-item {
+        padding: 8px;
+        font-weight: 500;
+        font-family: $font1;
+    }
+    .menu-item2 {
+        font-size: 12px;
+        margin-top: 0px;
+        position: relative;
+        left: 10px;
+        padding: 10px;
+        display: none;
+        line-height: 30px;
+    }
 }
