@@ -36,6 +36,7 @@
   text-align: center;
   padding-right: 0px;
   padding-top: 9px;
+  z-index: 200;
 }
 
 #menu {
@@ -43,11 +44,12 @@
   display: flex;
   justify-content: right;
   padding-right: 13px;
+  z-index: 200;
 }
 
 #menu-container {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: -2000px;
   width: 100%;

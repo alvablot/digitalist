@@ -30,21 +30,20 @@ $menuItems2.map((items) => {
 
 $menyButton.addEventListener("click", () => {
     step = speed;
-    document.querySelector("html").style.overflowX = "auto";
-    document.querySelector("body").style.overflowX = "auto";
+
     $menuContainer.style.zIndex = 20;
     $menyLayer1.style.display = "block";
     $transLayer.style.display = "block";
+    $transLayer.style.left = "0px";
     window.requestAnimationFrame(playAnimation);
 });
 $x.addEventListener("click", () => {
     step = -speed;
     $menyLayer1.style.display = "block";
     $transLayer.style.display = "none";
-    $menuContainer.style.right = "-1500px";
-    $menuContainer.style.zIndex = 200;
-    document.querySelector("html").style.overflowX = "hidden";
-    document.querySelector("body").style.overflowX = "hidden";
+    $menuContainer.style.right = "-800px";
+    $menuContainer.style.zIndex = 20;
+
 });
 
 $menuItems.forEach((items, i) => {
@@ -62,7 +61,7 @@ function playAnimation() {
         }
     }
     if (step === -speed) {
-        if (count > -1500) {
+        if (count < 800) {
             count += step;
             $menuContainer.style.right = count + "px";
         }
