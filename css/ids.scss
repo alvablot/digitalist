@@ -16,6 +16,8 @@
     width: 100%;
     height: 650px;
     background-image: url("../img/bussiness-team.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: $imgObacity;
     box-shadow: $imgShadow;
 }
